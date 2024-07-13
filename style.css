@@ -1,89 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    background-color: burlywood;
-    text-align: center;
-}  
-
-#hd{
-    margin:30px;
-    margin-top:30px;
-    color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.container{
-    margin-top:30px;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.game{
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap:1.5vh;
-}
-
-.box{
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-    font-size: 8vmin;
-    color: #e0b1cb;
-    background-color: rosybrown;
-}
-
-#reset-btn{
-    margin: 30px;
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #231942;
-    border-radius: 1rem;
-    border:none;
-    color:#fff;
-}
-
-#new-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #231942;
-    border-radius: 1rem;
-    border:none;
-    color:#fff;
-}
-
-#msg{
-    color: #fff;
-    font-size: 8vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.msg-container{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-
-.hide{
-    display: none;
-}
-
-.hide2{
-    display:inline;
-}
+h1 { 
+    color: orangered; 
+    margin-bottom: -5px; 
+} 
+p { 
+    margin-bottom: -10px; 
+} 
+.ui { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+.row { 
+    display: flex; 
+} 
+.cell { 
+    border: none; 
+    width: 80px; 
+    height: 80px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 24px; 
+    text-align: center; 
+    cursor: pointer; 
+}   
+.cell:active { 
+    outline: none; 
+} 
+/* 3*3 Grid */
+#b1{ 
+    border-bottom: 1px solid black; 
+    border-right: 1px solid black; 
+} 
+  
+#b2 { 
+    border-bottom: 1px solid black; 
+    border-right: 1px solid black; 
+    border-left: 1px solid black; 
+} 
+  
+#b3 { 
+    border-bottom: 1px solid black; 
+    border-left: 1px solid black; 
+} 
+  
+#b4 { 
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+    border-right: 1px solid black; 
+} 
+      
+#b5 { 
+    border: 1px solid black; 
+} 
+  
+#b6 { 
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+    border-left: 1px solid black; 
+} 
+  
+#b7 { 
+    border-top: 1px solid black; 
+    border-right: 1px solid black; 
+} 
+  
+#b8 { 
+    border-top: 1px solid black; 
+    border-right: 1px solid black; 
+    border-left: 1px solid black; 
+} 
+  
+#b9 { 
+    border-top: 1px solid black; 
+    border-left: 1px solid black; 
+} 
+/* Reset Button */
+#but { 
+    box-sizing: border-box; 
+    width: 95px; 
+    height: 40px; 
+    border: 1px solid dodgerblue; 
+    margin-left: auto; 
+    border-radius: 8px; 
+    font-family: Verdana, 
+        Geneva, Tahoma, sans-serif; 
+  
+    background-color: blanchedalmond; 
+    color: darkturquoise; 
+    font-size: 20px; 
+    cursor: pointer; 
+} 
+  
+/* Player turn space */
+#print { 
+    font-family: Verdana, 
+        Geneva, Tahoma, sans-serif; 
+    color: dodgerblue; 
+    font-size: 20px; 
+} 
+  
+/* Main Container */
+#main { 
+    text-align: center; 
+} 
+  
+/* Game Instruction Text */
+#ins { 
+    font-family: Verdana,Geneva,  
+                    Tahoma, sans-serif; 
+    color: dodgerblue; 
+    }
