@@ -1,3 +1,6 @@
+body{
+    background-color: oldlace;
+}
 h1 { 
     color: orangered; 
     margin-bottom: -5px; 
@@ -109,5 +112,5 @@ p {
 #ins { 
     font-family: Verdana,Geneva,  
                     Tahoma, sans-serif; 
-    color: dodgerblue; 
+    color: navy; 
     }
